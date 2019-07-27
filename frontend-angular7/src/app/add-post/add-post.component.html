@@ -1,0 +1,25 @@
+<div class="add-user-header">
+  <h2>Add Post</h2>
+
+</div>
+<div class="add-user-content">
+  <form (ngSubmit)="postSubmit()">
+
+    <mat-form-field>
+      <input matInput placeholder=" Title" name="title" type="text" [(ngModel)]="post.title">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <textarea matInput placeholder="Content" name="content" [(ngModel)]="post.content"></textarea>
+    </mat-form-field>
+
+
+
+    <div class="button-content">
+      <button mat-raised-button class="save-button" #btnClose mat-raised-button class="save-button" data-dismiss="modal" aria-label="Close" >Save
+      </button>
+      <button mat-button class="close-button" [mat-dialog-close]="">Cancel</button>
+    </div>
+  </form>
+</div>

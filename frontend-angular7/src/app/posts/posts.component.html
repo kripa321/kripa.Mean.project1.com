@@ -1,0 +1,15 @@
+<div class="header-data">
+  <button mat-button class="addPost" (click)="addPostModel()">
+    addPost
+  </button>
+</div>
+
+
+<div *ngFor="let post of posts ;let i = index" class="postData">
+  <h4>{{post.title}} <span style="float: right">
+    {{post.upVote}}
+    <i class="material-icons" (click)="upVote(post._id , i)">
+    thumb_up
+     </i></span></h4>
+  <h5>{{post.content}} <span style=" float: right ; width : 100%  ;text-align: right" >{{post.createdAt | date: 'dd.MM.yyyy  HH:mm'}}</span></h5>
+</div>

@@ -1,0 +1,29 @@
+.header-data{
+  margin: 8px 8px 8px 1px;
+}
+
+.addPost{
+  margin-top: 8px;
+  background: rgba(0,52,104,1);
+  min-width: 150px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+}
+
+.postData {
+  float: left;
+  width: 100%;
+  background-color: #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.posts{
+  span {
+    float: right;
+  }
+}
